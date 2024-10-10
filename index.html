@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>comvets.com.br</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Adicione seu estilo aqui */
+        .hidden {
+            display: none; /* Classe para esconder produtos */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,111 +24,111 @@
         </nav>
     </header>
 
-   <div class="container">
-    <aside class="categorias">
-        <h2>Categorias</h2>
-        <ul>
-            <li><a href="#produtos">Ebooks</a></li>
-            <li><a href="#produtos">Plataformas Digitais</a></li>
-        </ul>
-    </aside>
+    <div class="container">
+        <aside class="categorias">
+            <h2>Categorias</h2>
+            <ul>
+                <li><a href="#" onclick="filterProducts('')">Todos</a></li> <!-- Opção para mostrar todos -->
+                <li><a href="#" onclick="filterProducts('Ebook')">Ebooks</a></li>
+                <li><a href="#" onclick="filterProducts('Plataforma')">Plataformas Digitais</a></li>
+            </ul>
+        </aside>
 
-    <section class="destaque">
-        <h2>Destaques</h2>
-        <div class="produtos-container">
-            <div class="produto">
-                <img src="produto1.jpeg" alt="Produto 1">
-                <h3>WhatsApp Plus</h3>
-                <p>Plataforma Digital</p>
-                <p class="preco">R$ 39,90/mês</p>
-                <button onclick="window.location.href='produto1.html'">Ver Detalhes</button>
+        <section class="destaque">
+            <h2>Destaques</h2>
+            <div class="produtos-container">
+                <div class="produto" data-categoria="Plataforma">
+                    <img src="produto1.jpeg" alt="Produto 1">
+                    <h3>WhatsApp Plus</h3>
+                    <p>Plataforma Digital</p>
+                    <p class="preco">R$ 39,90/mês</p>
+                    <button onclick="window.location.href='produto1.html'">Ver Detalhes</button>
+                </div>
+                <div class="produto" data-categoria="Plataforma">
+                    <img src="produto2.jpeg" alt="Produto 2">
+                    <h3>Calculadora Inteligente Veterinária</h3>
+                    <p>Plataforma Digital</p>
+                    <p class="preco">R$ 59,90</p>
+                    <button onclick="window.location.href='produto2.html'">Ver Detalhes</button>
+                </div>
+                <div class="produto" data-categoria="Plataforma">
+                    <img src="produto3.jpeg" alt="Produto 3">
+                    <h3>Exames Laboratoriais Veterinários</h3>
+                    <p>Plataforma Digital</p>
+                    <p class="preco">R$ 59,90</p>
+                    <button onclick="window.location.href='produto3.html'">Ver Detalhes</button>
+                </div>
+                <div class="produto" data-categoria="Ebook">
+                    <img src="produto4.jpeg" alt="Produto 4">
+                    <h3>Ebook - Auxiliar Veterinário</h3>
+                    <p>Ebook PDF</p>
+                    <p class="preco">R$ 89,90</p>
+                    <button onclick="window.location.href='produto4.html'">Ver Detalhes</button>
+                </div>
+                <div class="produto" data-categoria="Ebook">
+                    <img src="produto5.jpeg" alt="Produto 5">
+                    <h3>1º Ebook - Causas de Alterações em Exames Laboratoriais para Cães e Gatos</h3>
+                    <p>Ebook PDF</p>
+                    <p class="preco">R$ 49,90</p>
+                    <button onclick="window.location.href='produto5.html'">Ver Detalhes</button>
+                </div>
             </div>
-            <div class="produto">
-                <img src="produto2.jpeg" alt="Produto 2">
-                <h3>Calculadora Inteligente Veterinária</h3>
-                <p>Plataforma Digital</p>
-                <p class="preco">R$ 59,90</p>
-                <button onclick="window.location.href='produto2.html'">Ver Detalhes</button>
-            </div>
-            <div class="produto">
-                <img src="produto3.jpeg" alt="Produto 3">
-                <h3>Exames Laboratoriais Veterinários</h3>
-                <p>Plataforma Digital</p>
-                <p class="preco">R$ 59,90</p>
-                <button onclick="window.location.href='produto3.html'">Ver Detalhes</button>
-            </div>
-            <div class="produto">
-                <img src="produto4.jpeg" alt="Produto 4">
-                <h3>Ebook - Auxiliar Veterinário</h3>
-                <p>Ebook PDF</p>
-                <p class="preco">R$ 89,90</p>
-                <button onclick="window.location.href='produto4.html'">Ver Detalhes</button>
-            </div>
-            <div class="produto">
-                <img src="produto5.jpeg" alt="Produto 5">
-                <h3>1º Ebook - Causas de Alterações em Exames Laboratoriais para Cães e Gatos</h3>
-                <p>Ebook PDF</p>
-                <p class="preco">R$ 49,90</p>
-                <button onclick="window.location.href='produto5.html'">Ver Detalhes</button>
-            </div>
-        </div>
-    </section>
-</div>
-
+        </section>
+    </div>
 
     <section id="produtos">
         <h2>Nossos Produtos</h2>
         <div class="produtos-container">
-            <div class="produto">
+            <div class="produto" data-categoria="Plataforma">
                 <img src="produto1.jpeg" alt="Produto 1">
                 <h3>WhatsApp Plus</h3>
                 <p>Plataforma Digital</p>
                 <p class="preco">R$ 39,90/mês</p>
                 <button onclick="window.location.href='produto1.html'">Ver Detalhes</button>
             </div>
-            <div class="produto">
+            <div class="produto" data-categoria="Plataforma">
                 <img src="produto2.jpeg" alt="Produto 2">
                 <h3>Calculadora Inteligente Veterinária</h3>
                 <p>Plataforma Digital</p>
                 <p class="preco">R$ 59,90</p>
                 <button onclick="window.location.href='produto2.html'">Ver Detalhes</button>
             </div>
-            <div class="produto">
+            <div class="produto" data-categoria="Plataforma">
                 <img src="produto3.jpeg" alt="Produto 3">
                 <h3>Exames Laboratoriais Veterinários</h3>
                 <p>Plataforma Digital</p>
                 <p class="preco">R$ 59,90</p>
                 <button onclick="window.location.href='produto3.html'">Ver Detalhes</button>
             </div>
-            <div class="produto">
+            <div class="produto" data-categoria="Ebook">
                 <img src="produto4.jpeg" alt="Produto 4">
                 <h3>Ebook - Auxiliar Veterinário</h3>
                 <p>Ebook PDF</p>
                 <p class="preco">R$ 89,90</p>
                 <button onclick="window.location.href='produto4.html'">Ver Detalhes</button>
             </div>
-            <div class="produto">
+            <div class="produto" data-categoria="Ebook">
                 <img src="produto5.jpeg" alt="Produto 5">
                 <h3>1º Ebook - Causas de Alterações em Exames Laboratoriais para Cães e Gatos</h3>
                 <p>Ebook PDF</p>
                 <p class="preco">R$ 49,90</p>
                 <button onclick="window.location.href='produto5.html'">Ver Detalhes</button>
             </div>
-            <div class="produto">
+            <div class="produto" data-categoria="Ebook">
                 <img src="produto6.jpeg" alt="Produto 6">
                 <h3>2º Ebook - Causas de Alterações em Exames Laboratoriais para Cães e Gatos</h3>
                 <p>Ebook PDF</p>
                 <p class="preco">R$ 59,90</p>
                 <button onclick="window.location.href='produto6.html'">Ver Detalhes</button>
             </div>
-            <div class="produto">
+            <div class="produto" data-categoria="Ebook">
                 <img src="produto7.jpeg" alt="Produto 7">
                 <h3>Termos de Consentimento Livre e Esclarecido para Médicos Veterinários</h3>
                 <p>Material PDF/Word</p>
                 <p class="preco">R$ 49,90</p>
                 <button onclick="window.location.href='produto7.html'">Ver Detalhes</button>
             </div>
-            <div class="produto">
+            <div class="produto" data-categoria="Ebook">
                 <img src="produto8.jpeg" alt="Produto 8">
                 <h3>Semiologia Aplicada a Parâmetros Fisiológicos de Animais Domésticos</h3>
                 <p>Ebook PDF</p>
@@ -140,5 +146,19 @@
     <footer>
         <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        function filterProducts(categoria) {
+            const produtos = document.querySelectorAll('.produto');
+            produtos.forEach(produto => {
+                // Verifica a categoria do produto e exibe ou esconde
+                if (produto.getAttribute('data-categoria') === categoria || categoria === '') {
+                    produto.classList.remove('hidden');
+                } else {
+                    produto.classList.add('hidden');
+                }
+            });
+        }
+    </script>
 </body>
 </html>

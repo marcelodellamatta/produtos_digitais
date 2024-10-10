@@ -39,41 +39,43 @@ nav ul li a:hover {
     color: #e74c3c;
 }
 
-aside.categorias {
-    width: 300px; /* Aumente a largura para 300px ou um valor que funcione */
-    height: 524px; /* Define uma altura fixa */
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-right: 20px; /* Espaçamento à direita */
+.barra-categorias {
+    background-color: #e7e7e7; /* Cor de fundo da barra */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    display: flex; /* Usando flexbox para disposição horizontal */
+    justify-content: center; /* Centraliza os itens na barra */
+    margin-top: 20px;
 }
 
-
-aside.categorias h2 {
+.barra-categorias h2 {
     color: #292729;
-    border-bottom: 2px solid #e74c3c;
-    padding-bottom: 10px;
+    margin-right: 20px; /* Espaçamento à direita do título */
 }
 
-aside.categorias ul {
+.barra-categorias ul {
     list-style: none;
-    padding: 0;
+    display: flex; /* Usando flexbox para itens em linha */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margem */
 }
 
-aside.categorias ul li {
-    margin: 10px 0;
+.barra-categorias ul li {
+    margin: 0 15px; /* Espaçamento entre os links */
 }
 
-aside.categorias ul li a {
-    color: #055b89;
-    text-decoration: none;
-    transition: color 0.3s;
+.barra-categorias a {
+    color: #055b89; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s; /* Transição suave para hover */
 }
 
-aside.categorias ul li a:hover {
-    color: #e74c3c;
+.barra-categorias a:hover {
+    color: #e74c3c; /* Cor ao passar o mouse */
 }
+
 
 section {
     flex-grow: 1; /* Faz a seção ocupar o restante do espaço disponível */

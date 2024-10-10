@@ -23,17 +23,16 @@
             </ul>
         </nav>
     </header>
+    <div class="barra-categorias">
+        <ul>
+            <li><a href="#" onclick="filterProducts('')">Todos</a></li> <!-- Opção para mostrar todos -->
+            <li><a href="#" onclick="filterProducts('Ebook')">Ebooks</a></li>
+            <li><a href="#" onclick="filterProducts('Plataforma')">Plataformas Digitais</a></li>
+        </ul>
+    </div>
+    
 
     <div class="container">
-        <aside class="categorias">
-            <h2>Categorias</h2>
-            <ul>
-                <li><a href="#" onclick="filterProducts('')">Todos</a></li> <!-- Opção para mostrar todos -->
-                <li><a href="#" onclick="filterProducts('Ebook')">Ebooks</a></li>
-                <li><a href="#" onclick="filterProducts('Plataforma')">Plataformas Digitais</a></li>
-            </ul>
-        </aside>
-
         <section class="destaque">
             <h2>Destaques</h2>
             <div class="produtos-container">
@@ -71,6 +70,13 @@
                     <p>Ebook PDF</p>
                     <p class="preco">R$ 49,90</p>
                     <button onclick="window.location.href='produto5.html'">Ver Detalhes</button>
+                </div>
+                <div class="produto" data-categoria="Ebook">
+                    <img src="produto8.jpeg" alt="Produto 8">
+                    <h3>Semiologia Aplicada a Parâmetros Fisiológicos de Animais Domésticos</h3>
+                    <p>Ebook PDF</p>
+                    <p class="preco">R$ 39,90</p>
+                    <button onclick="window.location.href='produto8.html'">Ver Detalhes</button>
                 </div>
             </div>
         </section>

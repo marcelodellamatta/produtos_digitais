@@ -37,6 +37,20 @@
         tr:hover {
             background-color: #f1f1f1;
         }
+
+          /* Galeria de imagens de mostruário */
+          .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
         /* Responsividade */
         @media (max-width: 768px) {
             .product-section {
@@ -56,6 +70,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
                 
             </ul>
         </nav>
@@ -141,12 +156,19 @@
                 <p></p>
                 <a href="https://wa.me/5543996412475?text=Ol%C3%A1%2C%20quero%20adquirir%20o%20whatsapp%20plus.%20" target="_blank" style="text-decoration: none;">
                     <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
                 </a>
             </div>
         </div>
+        <div class="gallery">
+            <img src="what1.png" alt="Imagem 1">
+            <img src="what2.png" alt="Imagem 2">
+            <img src="what3.png" alt="Imagem 3">
+            <img src="what4.png" alt="Imagem 4">
+        </div>
     </section>
     
-    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+    
     
     <footer>
         <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>

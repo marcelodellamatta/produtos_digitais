@@ -16,6 +16,19 @@
             max-width: 300px;
             margin-right: 20px;
         }
+         /* Galeria de imagens de mostruário */
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
         /* Responsividade */
         @media (max-width: 768px) {
@@ -36,6 +49,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
                 
             </ul>
         </nav>
@@ -46,19 +60,24 @@
         <div class="product-section">
             <img src="produto8.jpeg" alt="produto 8" class="product-image">
             <div>
-                <p>Os Termos de Consentimento Livre e Esclarecido é uma ferramenta essencial na prática médica veterinária, que visa garantir uma abordagem transparente, ética e colaborativa no tratamento de animais de estimação. Este documento representa um compromisso entre o médico veterinário e o proprietário do animal, assegurando que ambos estejam plenamente informados sobre os procedimentos, riscos, alternativas e benefícios relacionados à intervenção veterinária proposta.</p>
-                <p>Ao utilizar os Termos de Consentimento Livre e Esclarecido, o médico veterinário busca fornecer informações detalhadas sobre o diagnóstico, os procedimentos médicos recomendados, os possíveis efeitos colaterais, as opções de tratamento disponíveis e os potenciais desdobramentos do tratamento. Isso capacita os proprietários dos animais a tomar decisões informadas e a participar ativamente no processo de cuidado de seus animais de estimação.</p>
-                <p>Os termos também pode abordar questões financeiras, para que os proprietários estejam cientes dos custos associados ao tratamento proposto e possam planejar adequadamente. Além disso, o consentimento livre e esclarecido inclui uma seção onde os proprietários podem expressar quaisquer preocupações ou dúvidas que possam ter, permitindo um diálogo aberto entre o médico veterinário e o cliente.</p>
-                <p>A adoção dos Termos de Consentimento Livre e Esclarecido demonstra o comprometimento do médico veterinário com a excelência clínica, o bem-estar animal e a parceria com os proprietários. Ao fornecer informações claras e promover a comunicação, esse processo contribui para a tomada de decisões mais informadas e para a construção de confiança mútua entre todas as partes envolvidas.</p>
+                <p>Este ebook é uma fonte confiável e prática para estudantes e profissionais de medicina veterinária. Apresentando tabelas detalhadas, oferece valores normais de diversos parâmetros fisiológicos para animais domésticos, atendendo às necessidades clínicas do dia a dia. As informações abrangem diferentes espécies, idades e condições, sendo uma ferramenta valiosa para garantir cuidados de qualidade aos pacientes. Indispensável para uma prática clínica eficiente e segura, esse ebook é um recurso essencial para todos na área veterinária.</p>
                  <p><strong>Preço: R$ 39,90 / Acesso vitalício</strong></p>
                 <a href="https://pay.hotmart.com/X80927084E" target="_blank" style="text-decoration: none;">
                     <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
                 </a>
             </div>
         </div>
+         <!-- Seção de Mostruário -->
+         <div class="gallery">
+            <img src="fisio1.png" alt="Imagem 1">
+            <img src="fisio2.png" alt="Imagem 2">
+            <img src="fisio3.png" alt="Imagem 3">
+            <img src="fisio4.png" alt="Imagem 4">
+        </div>
     </section>
     
-    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+   
     
     <footer>
         <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>

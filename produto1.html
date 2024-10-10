@@ -21,11 +21,13 @@
             border-collapse: collapse;
             margin-top: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            table-layout: auto; /* Ajusta a largura das células automaticamente */
         }
         th, td {
             padding: 12px;
             text-align: center;
             border: 1px solid #e0e0e0;
+            white-space: nowrap; /* Evita que o texto quebre em múltiplas linhas */
         }
         th {
             background-color: #5a5c71;
@@ -38,8 +40,14 @@
             background-color: #f1f1f1;
         }
 
-          /* Galeria de imagens de mostruário */
-          .gallery {
+        /* Responsividade */
+        .table-responsive {
+            overflow-x: auto; /* Faz com que a tabela tenha rolagem horizontal em telas pequenas */
+            max-width: 100%; /* Garante que a tabela se ajuste à largura da tela */
+        }
+
+        /* Galeria de imagens de mostruário */
+        .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
@@ -61,6 +69,9 @@
                 margin-right: 0; /* Remove a margem direita na visualização móvel */
                 margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
             }
+            table, th, td {
+                white-space: normal; /* Permite quebra de linha em telas pequenas */
+            }
         }
     </style>
 </head>
@@ -71,7 +82,6 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -84,75 +94,77 @@
                 <p>O WhatsApp Plus é a solução inovadora que transforma a comunicação da sua empresa, oferecendo uma experiência de atendimento ao cliente mais eficiente e personalizada através do WhatsApp. Com recursos avançados, o WhatsApp Plus permite o gerenciamento de várias conversas simultaneamente com sua equipe, garantindo que nenhuma mensagem passe despercebida. A automação de respostas é uma das funcionalidades que otimiza o tempo da sua equipe, permitindo que mensagens automáticas sejam configuradas para perguntas frequentes, o que melhora significativamente a experiência do cliente. Além disso, o WhatsApp Plus oferece análises e relatórios detalhados que ajudam a acompanhar o desempenho do atendimento, identificando oportunidades de melhoria e estratégias eficazes.</p>
                 <p>Uma das grandes inovações do WhatsApp Plus é a integração com o ChatGPT, que potencializa ainda mais o atendimento ao cliente. Com essa integração, é possível utilizar a inteligência artificial para oferecer respostas rápidas e precisas, ajudando a resolver dúvidas e problemas dos clientes de forma ágil e eficaz. Essa colaboração entre o WhatsApp Plus e o ChatGPT permite que sua equipe se concentre em questões mais complexas, enquanto a IA cuida das interações mais simples, garantindo um atendimento de alta qualidade e disponibilidade 24/7.</p>
                 <p>Transforme a maneira como sua empresa se comunica e aumente a satisfação dos seus clientes com o WhatsApp Plus. Experimente agora e leve seu atendimento ao próximo nível!</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Plano</th>
-                            <th>Valor (R$/mês)</th>
-                            <th>Usuários</th>
-                            <th>WhatsApp</th>
-                            <th>Setores</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Plano Basic</td>
-                            <td>R$ 39,90</td>
-                            <td>1</td>
-                            <td>1</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Plano Essencial</td>
-                            <td>R$ 49,90</td>
-                            <td>5</td>
-                            <td>5</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>Plano Plus</td>
-                            <td>R$ 59,90</td>
-                            <td>10</td>
-                            <td>10</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Plano Avançado</td>
-                            <td>R$ 69,90</td>
-                            <td>20</td>
-                            <td>20</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <td>Plano Profissional</td>
-                            <td>R$ 79,90</td>
-                            <td>30</td>
-                            <td>30</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>Plano Corporativo</td>
-                            <td>R$ 89,90</td>
-                            <td>40</td>
-                            <td>40</td>
-                            <td>40</td>
-                        </tr>
-                        <tr>
-                            <td>Plano Elite</td>
-                            <td>R$ 99,90</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <td>Plano Black</td>
-                            <td>R$ 149,90</td>
-                            <td>100</td>
-                            <td>100</td>
-                            <td>100</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Plano</th>
+                                <th>Valor (R$/mês)</th>
+                                <th>Usuários</th>
+                                <th>WhatsApp</th>
+                                <th>Setores</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Plano Basic</td>
+                                <td>R$ 39,90</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Plano Essencial</td>
+                                <td>R$ 49,90</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Plano Plus</td>
+                                <td>R$ 59,90</td>
+                                <td>10</td>
+                                <td>10</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Plano Avançado</td>
+                                <td>R$ 69,90</td>
+                                <td>20</td>
+                                <td>20</td>
+                                <td>20</td>
+                            </tr>
+                            <tr>
+                                <td>Plano Profissional</td>
+                                <td>R$ 79,90</td>
+                                <td>30</td>
+                                <td>30</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>Plano Corporativo</td>
+                                <td>R$ 89,90</td>
+                                <td>40</td>
+                                <td>40</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>Plano Elite</td>
+                                <td>R$ 99,90</td>
+                                <td>50</td>
+                                <td>50</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Plano Black</td>
+                                <td>R$ 149,90</td>
+                                <td>100</td>
+                                <td>100</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <p></p>
                 <a href="https://wa.me/5543996412475?text=Ol%C3%A1%2C%20quero%20adquirir%20o%20whatsapp%20plus.%20" target="_blank" style="text-decoration: none;">
                     <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
@@ -167,8 +179,6 @@
             <img src="what4.png" alt="Imagem 4">
         </div>
     </section>
-    
-    
     
     <footer>
         <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>

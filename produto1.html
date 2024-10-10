@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,38 +13,37 @@
             align-items: center;
             margin-bottom: 20px;
         }
+
         .product-image {
             max-width: 300px;
             margin-right: 20px;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            table-layout: auto; /* Ajusta a largura das células automaticamente */
         }
-        th, td {
+
+        th,
+        td {
             padding: 12px;
             text-align: center;
             border: 1px solid #e0e0e0;
-            white-space: nowrap; /* Evita que o texto quebre em múltiplas linhas */
         }
+
         th {
             background-color: #5a5c71;
             color: white;
         }
+
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
+
         tr:hover {
             background-color: #f1f1f1;
-        }
-
-        /* Responsividade */
-        .table-responsive {
-            overflow-x: auto; /* Faz com que a tabela tenha rolagem horizontal em telas pequenas */
-            max-width: 100%; /* Garante que a tabela se ajuste à largura da tela */
         }
 
         /* Galeria de imagens de mostruário */
@@ -59,22 +59,78 @@
             height: auto;
             border-radius: 5px;
         }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .tabela-ajustada {
+            width: 100%;
+            max-width: 600px;
+            /* Limite de largura para a tabela */
+            float: left;
+            /* Alinha a tabela à esquerda */
+            border-collapse: collapse;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabela-ajustada th,
+        .tabela-ajustada td {
+            padding: 8px;
+            /* Diminuir o padding para compactar a tabela */
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            /* Tamanho padrão da fonte */
+        }
+
+        .tabela-ajustada th {
+            background-color: #5a5c71;
+            color: white;
+        }
+
+        .tabela-ajustada tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .tabela-ajustada tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+
+            .tabela-ajustada th,
+            .tabela-ajustada td {
+                font-size: 12px;
+                /* Tamanho da fonte reduzido para telas pequenas */
+                padding: 6px;
+                /* Ajuste do padding para reduzir espaço */
+            }
+        }
+
+
+
         /* Responsividade */
         @media (max-width: 768px) {
             .product-section {
-                flex-direction: column; /* Altera a direção para coluna em telas menores */
-                align-items: flex-start; /* Alinha os itens à esquerda */
+                flex-direction: column;
+                /* Altera a direção para coluna em telas menores */
+                align-items: flex-start;
+                /* Alinha os itens à esquerda */
             }
+
             .product-image {
-                margin-right: 0; /* Remove a margem direita na visualização móvel */
-                margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
-            }
-            table, th, td {
-                white-space: normal; /* Permite quebra de linha em telas pequenas */
+                margin-right: 0;
+                /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px;
+                /* Adiciona uma margem abaixo da imagem */
             }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>WhatsApp Plus</h1>
@@ -82,6 +138,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
+
             </ul>
         </nav>
     </header>
@@ -91,11 +148,25 @@
         <div class="product-section">
             <img src="produto1.jpeg" alt="produto 1" class="product-image">
             <div>
-                <p>O WhatsApp Plus é a solução inovadora que transforma a comunicação da sua empresa, oferecendo uma experiência de atendimento ao cliente mais eficiente e personalizada através do WhatsApp. Com recursos avançados, o WhatsApp Plus permite o gerenciamento de várias conversas simultaneamente com sua equipe, garantindo que nenhuma mensagem passe despercebida. A automação de respostas é uma das funcionalidades que otimiza o tempo da sua equipe, permitindo que mensagens automáticas sejam configuradas para perguntas frequentes, o que melhora significativamente a experiência do cliente. Além disso, o WhatsApp Plus oferece análises e relatórios detalhados que ajudam a acompanhar o desempenho do atendimento, identificando oportunidades de melhoria e estratégias eficazes.</p>
-                <p>Uma das grandes inovações do WhatsApp Plus é a integração com o ChatGPT, que potencializa ainda mais o atendimento ao cliente. Com essa integração, é possível utilizar a inteligência artificial para oferecer respostas rápidas e precisas, ajudando a resolver dúvidas e problemas dos clientes de forma ágil e eficaz. Essa colaboração entre o WhatsApp Plus e o ChatGPT permite que sua equipe se concentre em questões mais complexas, enquanto a IA cuida das interações mais simples, garantindo um atendimento de alta qualidade e disponibilidade 24/7.</p>
-                <p>Transforme a maneira como sua empresa se comunica e aumente a satisfação dos seus clientes com o WhatsApp Plus. Experimente agora e leve seu atendimento ao próximo nível!</p>
+                <p>O WhatsApp Plus é a solução inovadora que transforma a comunicação da sua empresa, oferecendo uma
+                    experiência de atendimento ao cliente mais eficiente e personalizada através do WhatsApp. Com
+                    recursos avançados, o WhatsApp Plus permite o gerenciamento de várias conversas simultaneamente com
+                    sua equipe, garantindo que nenhuma mensagem passe despercebida. A automação de respostas é uma das
+                    funcionalidades que otimiza o tempo da sua equipe, permitindo que mensagens automáticas sejam
+                    configuradas para perguntas frequentes, o que melhora significativamente a experiência do cliente.
+                    Além disso, o WhatsApp Plus oferece análises e relatórios detalhados que ajudam a acompanhar o
+                    desempenho do atendimento, identificando oportunidades de melhoria e estratégias eficazes.</p>
+                <p>Uma das grandes inovações do WhatsApp Plus é a integração com o ChatGPT, que potencializa ainda mais
+                    o atendimento ao cliente. Com essa integração, é possível utilizar a inteligência artificial para
+                    oferecer respostas rápidas e precisas, ajudando a resolver dúvidas e problemas dos clientes de forma
+                    ágil e eficaz. Essa colaboração entre o WhatsApp Plus e o ChatGPT permite que sua equipe se
+                    concentre em questões mais complexas, enquanto a IA cuida das interações mais simples, garantindo um
+                    atendimento de alta qualidade e disponibilidade 24/7.</p>
+                <p>Transforme a maneira como sua empresa se comunica e aumente a satisfação dos seus clientes com o
+                    WhatsApp Plus. Experimente agora e leve seu atendimento ao próximo nível!</p>
+
                 <div class="table-responsive">
-                    <table>
+                    <table class="tabela-ajustada">
                         <thead>
                             <tr>
                                 <th>Plano</th>
@@ -107,56 +178,56 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Plano Basic</td>
+                                <td>Basic</td>
                                 <td>R$ 39,90</td>
                                 <td>1</td>
                                 <td>1</td>
                                 <td>1</td>
                             </tr>
                             <tr>
-                                <td>Plano Essencial</td>
+                                <td>Essencial</td>
                                 <td>R$ 49,90</td>
                                 <td>5</td>
                                 <td>5</td>
                                 <td>5</td>
                             </tr>
                             <tr>
-                                <td>Plano Plus</td>
+                                <td>Plus</td>
                                 <td>R$ 59,90</td>
                                 <td>10</td>
                                 <td>10</td>
                                 <td>10</td>
                             </tr>
                             <tr>
-                                <td>Plano Avançado</td>
+                                <td>Avançado</td>
                                 <td>R$ 69,90</td>
                                 <td>20</td>
                                 <td>20</td>
                                 <td>20</td>
                             </tr>
                             <tr>
-                                <td>Plano Profissional</td>
+                                <td>Profissional</td>
                                 <td>R$ 79,90</td>
                                 <td>30</td>
                                 <td>30</td>
                                 <td>30</td>
                             </tr>
                             <tr>
-                                <td>Plano Corporativo</td>
+                                <td>Corporativo</td>
                                 <td>R$ 89,90</td>
                                 <td>40</td>
                                 <td>40</td>
                                 <td>40</td>
                             </tr>
                             <tr>
-                                <td>Plano Elite</td>
+                                <td>Elite</td>
                                 <td>R$ 99,90</td>
                                 <td>50</td>
                                 <td>50</td>
                                 <td>50</td>
                             </tr>
                             <tr>
-                                <td>Plano Black</td>
+                                <td>Black</td>
                                 <td>R$ 149,90</td>
                                 <td>100</td>
                                 <td>100</td>
@@ -165,10 +236,19 @@
                         </tbody>
                     </table>
                 </div>
+
+
+
+
+
+
                 <p></p>
-                <a href="https://wa.me/5543996412475?text=Ol%C3%A1%2C%20quero%20adquirir%20o%20whatsapp%20plus.%20" target="_blank" style="text-decoration: none;">
-                    <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
-                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+                <a href="https://wa.me/5543996412475?text=Ol%C3%A1%2C%20quero%20adquirir%20o%20whatsapp%20plus.%20"
+                    target="_blank" style="text-decoration: none;">
+                    <button
+                        style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os
+                        Produtos</button>
                 </a>
             </div>
         </div>
@@ -179,9 +259,12 @@
             <img src="what4.png" alt="Imagem 4">
         </div>
     </section>
-    
+
+
+
     <footer>
         <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

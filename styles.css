@@ -6,14 +6,10 @@ body {
 }
 
 header {
-    background: #333;
+    background: #747a7d;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
 }
 
 nav ul {
@@ -23,57 +19,75 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 section {
     padding: 20px;
     margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #292729;
 }
 
 .produtos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .produto {
-    background: #fff;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 15px;
-    width: 200px;
+    border-radius: 8px;
+    padding: 10px;
     text-align: center;
+    background: #fff;
+    transition: transform 0.2s;
+}
+
+.produto:hover {
+    transform: scale(1.05);
 }
 
 .produto img {
     max-width: 100%;
-    height: auto;
+    border-radius: 8px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #e74c3c;
 }
 
 button {
-    background-color: #28a745;
+    background: #323333;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #218838;
+    background: #5b5e5f;
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    background: #747a7d;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;

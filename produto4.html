@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMVETS - PRODUTOS DIGITAIS VETERINÁRIOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo padrão para desktop */
+        .product-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column; /* Altera a direção para coluna em telas menores */
+                align-items: flex-start; /* Alinha os itens à esquerda */
+            }
+            .product-image {
+                margin-right: 0; /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Material Intensivo - Auxiliar Veterinário</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Material Intensivo - Auxiliar Veterinário</h2>
+        <div class="product-section">
+            <img src="produto4.jpeg" alt="produto 4" class="product-image">
+            <div>
+                <p>Este material foi cuidadosamente desenvolvido para servir como uma referência prática e abrangente para auxiliares veterinários. Ao abordar desde fundamentos básicos até procedimentos clínicos essenciais, este guia oferece uma visão clara e detalhada das rotinas e responsabilidades no ambiente veterinário. Combinando teoria e prática, ele é ideal tanto para profissionais em início de carreira quanto para aqueles que buscam aprimorar seus conhecimentos e habilidades. Prepare-se para desempenhar um papel vital na saúde animal, com confiança e competência.</p>
+                <p><strong>Preço: R$ 89,90 / Acesso vitalício</strong></p>
+                <a href="https://pay.hotmart.com/N93990332H" target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #1621a0; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+    
+    <footer>
+        <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

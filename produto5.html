@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMVETS - PRODUTOS DIGITAIS VETERINÁRIOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo padrão para desktop */
+        .product-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column; /* Altera a direção para coluna em telas menores */
+                align-items: flex-start; /* Alinha os itens à esquerda */
+            }
+            .product-image {
+                margin-right: 0; /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>1th Ebook - Causas de Alterações em Exames Laboratoriais para Cães e Gatos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>1th Ebook - Causas de Alterações em Exames Laboratoriais para Cães e Gatos</h2>
+        <div class="product-section">
+            <img src="Produto5.jpeg" alt="Produto 5" class="product-image">
+            <div>
+                <p>O ebook é oferecido como um recurso valioso para médicos veterinários que buscam uma interpretação precisa e confiável dos resultados laboratoriais de exames de sangue e urina de cães e gatos. Com o objetivo de simplificar o processo de diagnóstico e garantir o tratamento mais eficiente possível, esse guia foi cuidadosamente projetado para ser fácil de usar e acessível, sempre visando aprimorar a qualidade da assistência médica aos animais. Além disso, com a sua abordagem objetiva e baseada em evidências, esse ebook também é uma fonte inestimável para aprimorar suas habilidades e conhecimentos, permitindo que você seja um médico veterinário ainda mais capacitado e preparado.</p>
+                <p><strong>Preço: R$ 49,90 / Acesso vitalício</strong></p>
+                <a href="https://pay.hotmart.com/S73482916U" target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #1621a0; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+    
+    <footer>
+        <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio Veterinário</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo padrão para desktop */
+        .product-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+           /* Galeria de imagens de mostruário */
+           .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column; /* Altera a direção para coluna em telas menores */
+                align-items: flex-start; /* Alinha os itens à esquerda */
+            }
+            .product-image {
+                margin-right: 0; /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COMÉRCIO VETERINÁRIO</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Casos de Rotina em Medicina Veterinária de Pequenos Animais</h2>
+        <div class="product-section">
+            <img src="casosrot.png" alt="Produto 3" class="product-image">
+            <div>
+                <p>O livro mais prático para médicos veterinários, leitura acessível e formato que facilita o uso no dia a dia, perfeito para profissionais e estudantes.Os autores souberam como escolher seus colaboradores e revisores científicos, o que conferiu à obra que editam, uma qualidade de informações raramente observada, de equilíbrio entre os capítulos. Com uma linguagem direta esta obra permite fácil leitura e entendimento do texto que guarda o foco preciso no mais importante de cada doença discutida. Esta segunda edição, revisada e enriquecida, segue se constituindo em uma referência de consulta rápida e constante pelo profissional clínico de pequenos animais.</p>
+                <p><strong>Preço: R$ 280,00 / Produto físico</strong></p>
+                <a href="https://s.shopee.com.br/7022wUFSje" target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+
+                </a>
+            </div>
+        </div>
+         <!-- Seção de Mostruário -->
+         <div class="gallery">
+            <img src="rot1.png" alt="Imagem 1">
+            <img src="rot2.png" alt="Imagem 2">
+            <img src="rot3.png" alt="Imagem 3">
+            <img src="rot4.png" alt="Imagem 4">
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

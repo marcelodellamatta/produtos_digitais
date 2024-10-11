@@ -39,55 +39,70 @@ nav ul li a:hover {
     color: #e74c3c;
 }
 
-.barra-categorias {
-    background-color: #e7e7e7; /* Cor de fundo da barra */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    margin-bottom: 20px; /* Espaçamento inferior */
-    display: flex; /* Usando flexbox para disposição horizontal */
-    justify-content: center; /* Centraliza os itens na barra */
-    margin-top: 20px;
+/* Estilo da barra de pesquisa */
+.barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-.barra-categorias h2 {
-    color: #292729;
-    margin-right: 20px; /* Espaçamento à direita do título */
+.barra-pesquisa input[type="text"] {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.barra-pesquisa input[type="text"]:focus {
+    border-color: #e74c3c;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.barra-categorias {
+    background-color: #e7e7e7;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .barra-categorias ul {
     list-style: none;
-    display: flex; /* Usando flexbox para itens em linha */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margem */
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .barra-categorias ul li {
-    margin: 0 15px; /* Espaçamento entre os links */
+    margin: 0 15px;
 }
 
 .barra-categorias a {
-    color: #055b89; /* Cor do texto */
-    text-decoration: none; /* Remove o sublinhado */
-    font-weight: bold; /* Texto em negrito */
-    transition: color 0.3s; /* Transição suave para hover */
+    color: #055b89;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 .barra-categorias a:hover {
-    color: #e74c3c; /* Cor ao passar o mouse */
+    color: #e74c3c;
 }
 
-
 section {
-    flex-grow: 1; /* Faz a seção ocupar o restante do espaço disponível */
-    padding: 30px; /* Espaçamento interno */
+    flex-grow: 1;
+    padding: 30px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 20px; /* Espaçamento externo à esquerda */
-    margin-right: 20px; /* Espaçamento externo à direita */
-    margin-bottom: 20px; /* Espaçamento inferior */
+    margin: 20px;
 }
-
 
 h2 {
     color: #292729;
@@ -99,7 +114,6 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    
 }
 
 .produto {

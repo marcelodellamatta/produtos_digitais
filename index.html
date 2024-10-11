@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>comvets.com.br</title>
+    <title>COMÉRCIO VETERINÁRIO</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Adicione seu estilo aqui */
         .hidden {
-            display: none; /* Classe para esconder produtos */
+            display: none;
+            /* Classe para esconder produtos */
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>PRODUTOS DIGITAIS VETERINÁRIOS</h1>
+        <h1>COMÉRCIO VETERINÁRIO</h1>
         <nav>
             <ul>
                 <li><a href="#produtos">Nosso Produtos</a></li>
@@ -23,6 +26,10 @@
             </ul>
         </nav>
     </header>
+    <!-- Barra de pesquisa -->
+    <div class="barra-pesquisa">
+        <input type="text" id="searchInput" placeholder="Pesquisar produtos..." onkeyup="searchProducts()">
+    </div>
     <div class="barra-categorias">
         <ul>
             <li><a href="#" onclick="filterProducts('')">Todos</a></li> <!-- Opção para mostrar todos -->
@@ -30,12 +37,12 @@
             <li><a href="#" onclick="filterProducts('Plataforma')">Plataformas Digitais</a></li>
         </ul>
     </div>
-    
+
 
     <div class="container">
         <section class="destaque">
             <h2>Destaques</h2>
-            <div class="produtos-container">
+            <div class="produtos-container" id="destaquesProdutos">
                 <div class="produto" data-categoria="Plataforma">
                     <img src="produto1.jpeg" alt="Produto 1">
                     <h3>WhatsApp Plus</h3>
@@ -84,7 +91,7 @@
 
     <section id="produtos">
         <h2>Nossos Produtos</h2>
-        <div class="produtos-container">
+        <div class="produtos-container" id="produtosContainer">
             <div class="produto" data-categoria="Plataforma">
                 <img src="produto1.jpeg" alt="Produto 1">
                 <h3>WhatsApp Plus</h3>
@@ -146,7 +153,23 @@
 
     <section id="produtosparceiros">
         <h2>Produtos Parceiros</h2>
-        <p>Aqui você encontra produtos recomendados por parceiros.</p>
+        <div class="produtos-container" id="produtosParceirosContainer">
+            <div class="produto" data-categoria="Ebook">
+                <img src="clasanemia.png" alt="Produto 9">
+                <h3>Guia da Anemia em Cães e Gatos</h3>
+                <p>Ebook PDF</p>
+                <p class="preco">R$ 67,50</p>
+                <button onclick="window.location.href='classanemia.html'">Ver Detalhes</button>
+            </div>
+            <div class="produtos-container">
+                <div class="produto" data-categoria="Ebook">
+                    <img src="pacoteebook1.jpg" alt="Produto 10">
+                    <h3>Pacote E-books + Guias</h3>
+                    <p>Ebook PDF</p>
+                    <p class="preco">R$ 99,90</p>
+                    <button onclick="window.location.href='pacoteebooks.html'">Ver Detalhes</button>
+                </div>
+            </div>
     </section>
 
     <footer>
@@ -154,6 +177,33 @@
     </footer>
 
     <script>
+        // Função para embaralhar os produtos
+        function shuffleProducts() {
+            const sections = ['destaquesProdutos', 'produtosContainer', 'produtosParceirosContainer']; // Adicione o ID da seção de produtos parceiros
+            sections.forEach(sectionId => {
+                const container = document.getElementById(sectionId);
+                const products = Array.from(container.children);
+                const shuffled = products.sort(() => Math.random() - 0.5);
+                container.innerHTML = ''; // Limpa o container
+                shuffled.forEach(product => container.appendChild(product)); // Adiciona os produtos embaralhados
+            });
+        }
+        // Função para filtrar os produtos com base na pesquisa
+        function searchProducts() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const produtos = document.querySelectorAll('.produto');
+
+            produtos.forEach(produto => {
+                const titulo = produto.querySelector('h3').textContent.toLowerCase();
+                // Verifica se a palavra buscada está no título do produto
+                if (titulo.includes(input)) {
+                    produto.classList.remove('hidden');
+                } else {
+                    produto.classList.add('hidden');
+                }
+            });
+        }
+
         function filterProducts(categoria) {
             const produtos = document.querySelectorAll('.produto');
             produtos.forEach(produto => {
@@ -165,6 +215,9 @@
                 }
             });
         }
+        // Chamar a função de embaralhamento ao carregar a página
+        window.onload = shuffleProducts;
     </script>
 </body>
+
 </html>

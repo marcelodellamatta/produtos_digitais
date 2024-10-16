@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio Veterinário</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo padrão para desktop */
+        .product-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+         /* Galeria de imagens de mostruário */
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column; /* Altera a direção para coluna em telas menores */
+                align-items: flex-start; /* Alinha os itens à esquerda */
+            }
+            .product-image {
+                margin-right: 0; /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="image/https://www.googletagmanager.com/gtag/js?id=G-K0NHLXCMMM">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K0NHLXCMMM');
+</script>
+</head>
+<body>
+    <header>
+        <h1>EBOOKS E LIVROS VETERINÁRIOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Hemograma em Cães e Gatos - Atlas e Guia de Processamento</h2>
+        <div class="product-section">
+            <img src="image/hemocitovet2.png" alt="hemocitovet2" class="product-image">
+            <div>
+                <p>Com este e-book, você terá em mãos um guia prático para minimizar erros e padronizar o hemograma na sua rotina veterinária. Desenvolvido pelas Médicas Veterinárias Katiane Lohn de Souza e Mariana Silva Rossi, que possuem mais de 10 anos de experiência em Laboratórios Veterinários, o material abrange todas as etapas do hemograma: pré-analítica, analítica e pós-analítica. Do processo de colheita até a liberação do laudo, o e-book oferece um passo a passo completo, repleto de dicas, imagens detalhadas de células e achados clínicos, para que você possa identificar estruturas com segurança e confiança.</p>
+                 <p><strong>Preço: R$ 99,90 / Acesso vitalício</strong></p>
+                <a href="https://go.hotmart.com/Y95962687B?dp=1" target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+                </a>
+            </div>
+        </div>
+         <!-- Seção de Mostruário -->
+         <div class="gallery">
+            <img src="image/hemocitovet21.png" alt="Imagem 1">
+            <img src="image/hemocitovet22.png" alt="Imagem 2">
+            <img src="image/hemocitovet23.png" alt="Imagem 3">
+            <img src="image/hemocitovet24.png" alt="Imagem 4">
+        </div>
+    </section>
+    
+   
+    
+    <footer>
+        <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

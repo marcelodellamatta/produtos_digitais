@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio Veterinário</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo padrão para desktop */
+        .product-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .product-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+
+        /* Galeria de imagens de mostruário */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column;
+                /* Altera a direção para coluna em telas menores */
+                align-items: flex-start;
+                /* Alinha os itens à esquerda */
+            }
+
+            .product-image {
+                margin-right: 0;
+                /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px;
+                /* Adiciona uma margem abaixo da imagem */
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="image/https://www.googletagmanager.com/gtag/js?id=G-K0NHLXCMMM">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K0NHLXCMMM');
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:void(0);" onclick="location.reload();" style="color: white; text-decoration: none;">
+            <h1>EBOOKS E LIVROS VETERINÁRIOS</h1>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Maquinograma Não! Por que impressos de equipamentos automatizados não são laudos de exames laboratoriais?</h2>
+        <div class="product-section">
+            <img src="image/biomedicovett1.png" alt="biomedicovet" class="product-image">
+            <div>
+
+
+                <p>Este e-book tem como objetivo esclarecer o conceito de MAQUINOGRAMA no Diagnóstico Laboratorial
+                    Veterinário, mostrando que as análises feitas por máquinas são apenas uma parte da fase analítica e
+                    não representam o exame laboratorial completo. Destinado a profissionais como Médicos Veterinários,
+                    Biomédicos, Biólogos, Farmacêuticos, Técnicos em Laboratório e estudantes dessas áreas, este
+                    material é fundamental para aprofundar o entendimento sobre os processos laboratoriais e a
+                    necessidade de uma análise mais crítica e completa.</p>
+
+                <p>Com argumentos sólidos, infográficos detalhados e fotos de microscopia, este e-book mostra a
+                    importância de ir além dos resultados automatizados, ajudando a convencer seus colegas sobre a
+                    necessidade de emitir laudos laboratoriais mais precisos e confiáveis. Transforme sua prática e
+                    compreenda de forma clara que MAQUINOGRAMA não é HEMOGRAMA.</p>
+
+                <p><strong>Preço: R$ 29,90 / Acesso vitalício</strong></p>
+                <a href="https://go.hotmart.com/D96090567X?dp=1" target="_blank" style="text-decoration: none;">
+                    <button
+                        style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os
+                        Produtos</button>
+                </a>
+            </div>
+        </div>
+        <!-- Seção de Mostruário -->
+        <div class="gallery">
+            <img src="image/biomedicovett11.png" alt="Imagem 1">
+            <img src="image/biomedicovett12.png" alt="Imagem 2">
+            <img src="image/biomedicovett13.png" alt="Imagem 3">
+            <img src="image/biomedicovett14.png" alt="Imagem 4">
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

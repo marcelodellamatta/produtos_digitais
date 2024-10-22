@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio Veterinário</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo padrão para desktop */
+        .product-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+         /* Galeria de imagens de mostruário */
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column; /* Altera a direção para coluna em telas menores */
+                align-items: flex-start; /* Alinha os itens à esquerda */
+            }
+            .product-image {
+                margin-right: 0; /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="image/https://www.googletagmanager.com/gtag/js?id=G-K0NHLXCMMM">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K0NHLXCMMM');
+</script>
+</head>
+<body>
+    <header>
+        <a href="javascript:void(0);" onclick="location.reload();" style="color: white; text-decoration: none;">
+    <h1>EBOOKS E LIVROS VETERINÁRIOS</h1>
+</a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Ebook - Biologia e Medicina de Serpentes</h2>
+        <div class="product-section">
+            <img src="image/serpente1.png" alt="serpente1" class="product-image">
+            <div>
+                <p>Este eBook foi desenvolvido especialmente para estudantes e profissionais das áreas de Biologia, Medicina Veterinária, Zootecnia, Gestão Ambiental, Ecologia, Engenharia Florestal e Ambiental, além de tutores e pessoas interessadas no universo das serpentes. Com uma abordagem clara e didática, o conteúdo foi cuidadosamente estruturado para garantir uma compreensão fácil e profunda dos temas abordados, promovendo uma absorção eficiente do conhecimento por diferentes públicos, desde iniciantes até especialistas.</p>
+                <p>O principal objetivo deste material é oferecer uma fonte de consulta prática e educativa, abordando aspectos essenciais da biologia, conservação e saúde das serpentes. Ao longo do eBook, são explorados temas como o manejo e contenção, clínica médica e cirúrgica, além de aspectos anatômicos, farmacológicos e as principais patologias que acometem esses répteis. Também são apresentadas orientações fundamentais para o bem-estar e os cuidados necessários com as serpentes.</p>
+                <p>Além disso, o material inclui discussões aprofundadas sobre patologia clínica, doenças bacterianas, fúngicas, virais e parasitárias, bem como condições não infecciosas que podem afetar a saúde desses animais. A relevância da medicina preventiva é amplamente abordada, auxiliando profissionais na prática clínica ao promover cuidados mais eficazes e seguros.</p>
+                <p>Com o intuito de apoiar tanto a rotina de estudantes quanto o desenvolvimento profissional, este eBook oferece não apenas informações técnicas essenciais, mas também curiosidades e dicas práticas voltadas para tutores e interessados no tema. Assim, o material se torna uma ferramenta completa, capaz de enriquecer o conhecimento sobre a biologia e a medicina das serpentes, contribuindo para sua preservação e cuidado adequado.</p>
+                <p>Seja você um profissional da área de saúde animal, um estudante em busca de conhecimento mais aprofundado, ou um tutor interessado em entender melhor a saúde e o manejo das serpentes, este eBook é a ferramenta ideal para adquirir informações atualizadas e confiáveis sobre esses animais fascinantes.</p>
+                <p><strong>Preço: R$ 89,90 / Acesso vitalício</strong></p>
+                <a href="https://go.hotmart.com/X96103623O?dp=1" target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+                </a>
+            </div>
+        </div>
+         <!-- Seção de Mostruário -->
+         <div class="gallery">
+            <img src="image/serpente11.png" alt="Imagem 1">
+            <img src="image/serpente12.png" alt="Imagem 2">
+            <img src="image/serpente13.png" alt="Imagem 3">
+            <img src="image/serpente14.png" alt="Imagem 4">
+        </div>
+    </section>
+    
+   
+    
+    <footer>
+        <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

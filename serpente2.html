@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comércio Veterinário</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo padrão para desktop */
+        .product-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 300px;
+            margin-right: 20px;
+        }
+         /* Galeria de imagens de mostruário */
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column; /* Altera a direção para coluna em telas menores */
+                align-items: flex-start; /* Alinha os itens à esquerda */
+            }
+            .product-image {
+                margin-right: 0; /* Remove a margem direita na visualização móvel */
+                margin-bottom: 20px; /* Adiciona uma margem abaixo da imagem */
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="image/https://www.googletagmanager.com/gtag/js?id=G-K0NHLXCMMM">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K0NHLXCMMM');
+</script>
+</head>
+<body>
+    <header>
+        <a href="javascript:void(0);" onclick="location.reload();" style="color: white; text-decoration: none;">
+    <h1>EBOOKS E LIVROS VETERINÁRIOS</h1>
+</a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://wa.me/5543996412475" target="_blank">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Curso - Biologia e Medicina de Serpentes</h2>
+        <div class="product-section">
+            <img src="image/serpente2.png" alt="serpente2" class="product-image">
+            <div>
+                <p>Este curso foi desenvolvido especialmente para estudantes e profissionais das áreas de Biologia, Medicina Veterinária, Zootecnia, Gestão Ambiental, Ecologia, Engenharia Florestal e Ambiental, assim como para tutores e pessoas interessadas no fascinante universo das serpentes. Com uma abordagem altamente didática, o curso visa facilitar a compreensão de temas complexos, garantindo uma absorção eficiente do conteúdo por diferentes perfis de alunos, desde iniciantes até profissionais mais experientes.</p>
+                <p>Com uma carga horária de 14 horas e certificado de conclusão, o curso tem como objetivo principal fornecer conhecimento prático e teórico sobre a biologia e a medicina das serpentes, abordando tópicos que variam desde aspectos biológicos e anatômicos até o manejo, a contenção e os cuidados clínicos necessários para a saúde desses animais. Além disso, os alunos terão acesso a informações sobre farmacologia, patologias clínicas, doenças bacterianas, fúngicas, virais e parasitárias que podem acometer as serpentes, bem como o papel crucial da medicina preventiva.</p>
+                <p>Ao longo do curso, serão explorados temas como conservação das espécies, referências hematológicas, manejo de instalações adequadas e até curiosidades que podem despertar o interesse tanto de profissionais quanto de tutores e entusiastas das serpentes. Com foco em oferecer conteúdo relevante para o dia a dia de estudantes e profissionais, o curso também proporciona um aprendizado enriquecedor para tutores que desejam entender melhor o cuidado com suas serpentes, promovendo bem-estar e práticas responsáveis.</p>
+                <p>Este curso completo é ideal para quem busca se aprofundar em biologia e medicina de serpentes, oferecendo uma experiência de aprendizado acessível e certificada, que contribui para o desenvolvimento técnico e científico na área.</p>
+                <p><strong>Preço: R$ 299,90 / Acesso vitalício</strong></p>
+                <a href="https://go.hotmart.com/O96103626D?dp=1" target="_blank" style="text-decoration: none;">
+                    <button style="background-color: #323333; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+                    <button onclick="window.location.href='index.html'" style="margin: 20px;">Voltar para Todos os Produtos</button>
+                </a>
+            </div>
+        </div>
+         <!-- Seção de Mostruário -->
+         <div class="gallery">
+            <img src="image/serpente11.png" alt="Imagem 1">
+            <img src="image/serpente12.png" alt="Imagem 2">
+            <img src="image/serpente13.png" alt="Imagem 3">
+            <img src="image/serpente14.png" alt="Imagem 4">
+        </div>
+    </section>
+    
+   
+    
+    <footer>
+        <p>&copy; 2024 Marcelo Della Matta. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
